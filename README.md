@@ -12,3 +12,4 @@
 ## 翻譯參考
 - [VSCode 繁體中文語言包](https://github.com/microsoft/vscode-loc/tree/master/i18n/vscode-language-pack-zh-hant)
 - [k-skye 的 gitkraken-chinese](https://github.com/k-skye/gitkraken-chinese)
+- [gitg 繁體中文 (台灣) 翻譯](https://gitlab.gnome.org/GNOME/gitg/-/blob/master/po/zh_TW.po)
