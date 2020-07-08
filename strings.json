@@ -228,10 +228,10 @@
     "Registration-GoToLoginLeadin": "已經有帳號了嗎? ",
     "Registration-GoToLogin": "登入",
 
-    "SelfHostedConfiguration-Title": "Configure GitKraken Self-Hosted",
-    "SelfHostedConfiguration-EnterHostname": "Please paste the URL provided on the GitKraken download page:",
-    "SelfHostedConfiguration-CouldNotConnect": "Could not connect to the server.",
-    "SelfHostedConfiguration-CouldNotParseURL": "Could not parse the given URL.",
+    "SelfHostedConfiguration-Title": "設定自架 GitKraken",
+    "SelfHostedConfiguration-EnterHostname": "請貼上 GitKraken 下載頁提供的連結：",
+    "SelfHostedConfiguration-CouldNotConnect": "無法連接伺服器。",
+    "SelfHostedConfiguration-CouldNotParseURL": "無法解析連結。",
 
     "LicenseExpirationWarning-NDays": "License expires in {0} days",
     "LicenseExpirationWarning-Tomorrow": "License expires in 1 day!",
