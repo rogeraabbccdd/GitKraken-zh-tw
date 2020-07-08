@@ -121,20 +121,20 @@
     "FollowUsOnTwitter": "在 Twitter 追蹤我們"
   },
   "strings": {
-    "About-BuiltBy": "GitKraken is built by Axosoft in sunny Scottsdale, AZ",
-    "About-OpenSource": "It uses some fine open source projects:",
-    "About-Libgit2License": "GitKraken uses the libgit2 library via NodeGit under the GNU public license with a linking exception",
-    "About-TermsOfService": "Terms of Service",
-    "About-OpenSourceLicenses": "Dependent Open Source Licenses",
-    "About-AllRightsReserved": "All rights reserved",
+    "About-BuiltBy": "GitKraken 由 Axosoft 在陽光明媚的亞利桑納州斯科茨代爾製作",
+    "About-OpenSource": "它使用了一些優秀的開源項目:",
+    "About-Libgit2License": "GitKraken 在 GNU 通用公眾授權條款下與 GPL 連結例外通過 NodeGit 使用 libgit2 函式庫",
+    "About-TermsOfService": "服務條款",
+    "About-OpenSourceLicenses": "依賴開源授權",
+    "About-AllRightsReserved": "保留所有權利",
 
-    "Application": "Application",
+    "Application": "應用程式",
 
     "Bytes": "bytes",
 
     "By": "{0} by ",
 
-    "QuitGitKraken": "Quit GitKraken",
+    "QuitGitKraken": "離開 GitKraken",
 
     "Repo-Close": "Close repository",
     "Repo-Delete": "Delete repository",
