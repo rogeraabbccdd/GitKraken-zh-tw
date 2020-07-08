@@ -136,12 +136,12 @@
 
     "QuitGitKraken": "離開 GitKraken",
 
-    "Repo-Close": "Close repository",
-    "Repo-Delete": "Delete repository",
-    "Repo-ClearFromRecentRepositories": "Clear {0} from recent repositories",
-    "Repo-Open": "Open repository",
-    "Repo-OpenInFileManager": "Open in file manager",
-    "Repo-OpenInTerminal": "Open in Terminal",
+    "Repo-Close": "關閉儲存庫",
+    "Repo-Delete": "刪除儲存庫",
+    "Repo-ClearFromRecentRepositories": "清除最近 {0} 個儲存庫",
+    "Repo-Open": "開啟儲存庫",
+    "Repo-OpenInFileManager": "在檔案總管開啟",
+    "Repo-OpenInTerminal": "在終端機開啟",
 
     "Registration-ChangeEmail": "Sign into a different account",
     "Registration-CheckStatus": "Check Status",
