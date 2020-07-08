@@ -233,9 +233,9 @@
     "SelfHostedConfiguration-CouldNotConnect": "無法連接伺服器。",
     "SelfHostedConfiguration-CouldNotParseURL": "無法解析連結。",
 
-    "LicenseExpirationWarning-NDays": "License expires in {0} days",
-    "LicenseExpirationWarning-Tomorrow": "License expires in 1 day!",
-    "LicenseExpirationWarning-Today": "License expires in less than a day!",
+    "LicenseExpirationWarning-NDays": "授權將在 {0} 天後過期",
+    "LicenseExpirationWarning-Tomorrow": "授權將在 1 天後過期！",
+    "LicenseExpirationWarning-Today": "授權將在 1 天內過期！",
 
     "Standalone-LicenseConfigurationTitle": "Stand-Alone License",
     "Standalone-LicenseInfoForActive": "Licensed to {0} for {1} users",
