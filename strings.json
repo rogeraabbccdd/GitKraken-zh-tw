@@ -332,14 +332,14 @@
 
     "FreeBadgeTooltip": "Licensed for use on open source projects. Click to see plans.",
 
-    "Stash-ApplyWithUncommittedChangesPrompt": "You have uncommitted changes. Are you sure you want to apply the stash on top of your changes?",
+    "Stash-ApplyWithUncommittedChangesPrompt": "您有未提交的變更。您確定要套用擱置並取代變更嗎？",
 
-    "StashMessage-Amend": "Auto stash before amend of \"{0}\"",
-    "StashMessage-Checkout": "Auto stash before checking out \"{0}\"",
-    "StashMessage-CherryPick": "Auto stash before cherry pick of \"{0}\"",
-    "StashMessage-Merge": "Auto stash before merge of \"{0}\" and \"{1}\"",
-    "StashMessage-Rebase": "Auto stash before rebase of \"{0}\"",
-    "StashMessage-Revert": "Auto stash before revert of \"{0}\"",
+    "StashMessage-Amend": "在修改 \"{0}\" 前自動擱置",
+    "StashMessage-Checkout": "在簽出 \"{0}\" 前自動擱置",
+    "StashMessage-CherryPick": "在挑揀 \"{0}\" 前自動擱置",
+    "StashMessage-Merge": "在合併 \"{0}\" 和 \"{1}\" 前自動擱置",
+    "StashMessage-Rebase": "在重訂 \"{0}\" 基底前自動擱置",
+    "StashMessage-Revert": "在還原 \"{0}\" 前自動擱置",
 
     "Ignore": "Ignore",
     "IgnoreFile": "Ignore '{0}'",
