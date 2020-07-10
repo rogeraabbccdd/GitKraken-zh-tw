@@ -493,13 +493,13 @@
     "LeftPanel-Show": "在圖表中顯示",
     "LeftPanel-StopSoloing": "停止單獨顯示這個分支",
 
-    "TextOperation-Cut": "Cut",
-    "TextOperation-Copy": "Copy",
-    "TextOperation-CopyFileContentsToClipboard": "Copy file contents to clipboard",
-    "TextOperation-CopySuccess": "Copied!",
-    "TextOperation-Paste": "Paste",
-    "TextOperation-Delete": "Delete",
-    "TextOperation-SelectAll": "Select All",
+    "TextOperation-Cut": "剪下",
+    "TextOperation-Copy": "複製",
+    "TextOperation-CopyFileContentsToClipboard": "將檔案內容複製到剪貼簿",
+    "TextOperation-CopySuccess": "已複製！",
+    "TextOperation-Paste": "貼上",
+    "TextOperation-Delete": "刪除",
+    "TextOperation-SelectAll": "全選",
 
     "ResizePanel": "Resize Panel",
 
