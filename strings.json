@@ -341,13 +341,13 @@
     "StashMessage-Rebase": "在重訂 \"{0}\" 基底前自動擱置",
     "StashMessage-Revert": "在還原 \"{0}\" 前自動擱置",
 
-    "Ignore": "Ignore",
-    "IgnoreFile": "Ignore '{0}'",
-    "IgnoreNFiles": "Ignore {0} files",
+    "Ignore": "忽略",
+    "IgnoreFile": "忽略 '{0}'",
+    "IgnoreNFiles": "忽略 {0} 個檔案",
 
-    "AllFilesWithSameExtension": "All files with the extension '{0}'",
-    "AllFilesInFolder": "All files in '{0}/'",
-    "IgnoreAllFilesInFolder": "Ignore all files in '{0}/'",
+    "AllFilesWithSameExtension": "所有副檔名為 '{0}' 的檔案",
+    "AllFilesInFolder": "所有在 '{0}/' 內的檔案",
+    "IgnoreAllFilesInFolder": "忽略所有在 '{0}/' 內的檔案",
 
     "File-AlreadyExists": "File '{0}' already exists",
     "File-Blame": "File Blame",
