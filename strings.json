@@ -1099,9 +1099,9 @@
     "RefZone-LocalRefLabel": "local",
     "RefZone-SubmoduleTagTip": "submodule parent reference",
 
-    "ChangeRepo-CloneRepo": "Clone",
-    "ChangeRepo-InitRepo": "Init",
-    "ChangeRepo-OpenRepo": "Open",
+    "ChangeRepo-CloneRepo": "複製",
+    "ChangeRepo-InitRepo": "初始化",
+    "ChangeRepo-OpenRepo": "開啟",
 
     "CloseRepo-CloseFailed": "Close Failed",
 
