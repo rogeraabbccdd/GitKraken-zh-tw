@@ -760,12 +760,12 @@
     "ContextMenu-UnfavoriteRepository": "取消收藏儲存庫",
     "ContextMenu-ViewServiceRemoteInBrowser": "在 {1} 查看 {0}",
 
-    "Toolbar-CloseSubmodule": "Close Submodule",
-    "Toolbar-CloseRepository": "Close Repository",
-    "Toolbar-PushNotAvailableInDetachedHead": "Push is not available when in a detached HEAD state",
-    "Toolbar-PullMergeNotAvailableInDetachedHead": "Pull (fast-forward if possible) is not available when in a detached HEAD state",
-    "Toolbar-PullFastForwardOnlyNotAvailableInDetachedHead": "Pull (fast-forward only) is not available when in a detached HEAD state",
-    "Toolbar-PullRebaseNotAvailableInDetachedHead": "Pull (rebase) is not available when in a detached HEAD state",
+    "Toolbar-CloseSubmodule": "關閉子模組",
+    "Toolbar-CloseRepository": "關閉儲存庫",
+    "Toolbar-PushNotAvailableInDetachedHead": "無法在脫離頭端狀態推送",
+    "Toolbar-PullMergeNotAvailableInDetachedHead": "無法在脫離頭端狀態提取 (快進優先)",
+    "Toolbar-PullFastForwardOnlyNotAvailableInDetachedHead": "無法在脫離頭端狀態提取 (僅快進)",
+    "Toolbar-PullRebaseNotAvailableInDetachedHead": "無法在脫離頭端狀態提取 (變基)",
 
     "BreadCrumbs-FavoritesHeader": "Favorites",
     "BreadCrumbs-RecentsHeader": "Recently opened",
