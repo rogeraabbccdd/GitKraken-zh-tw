@@ -432,7 +432,7 @@
     "FuzzyFinder-CreateFilePrefix": "建立檔案",
     "FuzzyFinder-DeleteFilePrefix": "刪除檔案",
     "FuzzyFinder-EditFilePrefix": "編輯檔案",
-    "FuzzyFinder-StartPullRequest": "開始拉取請求",
+    "FuzzyFinder-StartPullRequest": "建立拉取請求",
     "FuzzyFinder-StartPullRequestKeywords": "New Create Pull Request 新 建立 拉取請求",
     "FuzzyFinder-DevPrefix": "開發",
     "FuzzyFinder-DiscardAllKeywords": "reset hard all 重置 全部",
