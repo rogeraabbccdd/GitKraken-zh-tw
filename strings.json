@@ -951,7 +951,7 @@
 
     "RemoteBar-Menu": "遠端操作",
 
-    "ShPath-ConfirmPath": "This repo needs sh to run GitHooks. Is {0} the path to your sh?",
+    "ShPath-ConfirmPath": "這個儲存庫需要 sh 來執行 GitHooks。 sh 的路徑是否為 {0} ？",
 
     "StashBar-Menu": "擱置操作",
 
@@ -970,8 +970,8 @@
     "Timeline-NYearsAgo": "{0} 年前",
     "Timeline-ArbitrarilyLongAgo": "請停止捲動",
 
-    "Graph-AdjustCommitCount": "Displaying {0} commits. Adjust this setting in ",
-    "Graph-Preferences": "Preferences",
+    "Graph-AdjustCommitCount": "顯示 {0} 個提交。您可以在喜好設定修改",
+    "Graph-Preferences": "",
 
     "RightPanel-FilterFiles": "篩選檔案",
     "RightPanel-MergeConflictsDetected": "偵測到合併衝突",
@@ -1043,19 +1043,19 @@
     "PendingInteractiveRebasePanel-UpdateMessage": "Update Message",
     "PendingInteractiveRebasePanel-KeyboardShortcuts": "Keyboard Shortcuts",
 
-    "FileContentsPanel-Binary": "Binary file",
-    "FileContentsPanel-Deleted": "File was deleted",
-    "FileContentsPanel-Tree": "Directory",
-    "FileContentsPanel-EmptyDiff": "File contents are unchanged.",
+    "FileContentsPanel-Binary": "二進位檔案",
+    "FileContentsPanel-Deleted": "檔案已刪除",
+    "FileContentsPanel-Tree": "目錄",
+    "FileContentsPanel-EmptyDiff": "檔案沒有變動",
 
-    "DiffPanel-EmptyFile": "Empty file",
+    "DiffPanel-EmptyFile": "空白檔案",
 
-    "FileNodeListControls-FullPath": "Path",
-    "FileNodeListControls-SortByNameLabel": "Sort by filename",
-    "FileNodeListControls-TreeView": "Tree",
+    "FileNodeListControls-FullPath": "路徑",
+    "FileNodeListControls-SortByNameLabel": "依檔名排序",
+    "FileNodeListControls-TreeView": "樹狀",
 
-    "FileNodeListHeader-CollapseAll": "Collapse All",
-    "FileNodeListHeader-ExpandAll": "Expand All",
+    "FileNodeListHeader-CollapseAll": "摺疊全部",
+    "FileNodeListHeader-ExpandAll": "展開全部",
 
     "FileNode-1HiddenSelection": "1 file selected",
     "FileNode-NHiddenSelections": "{0} files selected",
