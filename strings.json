@@ -656,9 +656,9 @@
     "OrderChipotleButtonTooltip": "Chipotle Thursday",
     "SearchCommitsTooltip": "Search Commits ({0} + f)",
 
-    "Rebasing-CommitLabel": "Rebasing commit {0} out of {1}",
-    "Rebasing-AutoStashLabel": "Stashing uncommitted changes",
-    "Rebasing-PoppingAutoStashLabel": "Popping auto stashed changes",
+    "Rebasing-CommitLabel": "從 {1} 變基提交 {0}",
+    "Rebasing-AutoStashLabel": "正在擱置未提交的變更",
+    "Rebasing-PoppingAutoStashLabel": "正在提取自動擱置的變更",
 
     "ReflogAction": "Action with reflog message \"{0}\"",
     "ReflogActionCommit": "Commit \"{0}\"",
