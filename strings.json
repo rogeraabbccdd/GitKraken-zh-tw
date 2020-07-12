@@ -43,8 +43,8 @@
     "OpenRepoInExternalEditor": "在外部編輯器開啟儲存庫",
     "OpenRepoInNamedExternalEditor": "在 {0} 開啟儲存庫",
     "OpenRepoInExternal&Editor": "在外部編輯器開啟儲存庫 (&E)",
-    "Open&Terminal": "開啟終端機 (&T)",
-    "OpenTerminal": "開啟終端機",
+    "Open&Terminal": "在終端機開啟 (&T)",
+    "OpenTerminal": "在終端機開啟",
     "OpenInFileManager": "在檔案總管開啟",
     "SignIntoDifferentAccount": "使用其他帳戶登入",
 
