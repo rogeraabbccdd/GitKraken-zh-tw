@@ -706,7 +706,7 @@
     "ContextMenu-IssueCheckoutBranchFrom": "從 {0} 簽出分支",
     "ContextMenu-IssueCreateBranchForThisX": "為這個 {0} 建立分支",
     "ContextMenu-IssueCreateBranchGitFlowFeature": "Gitflow: 建立功能分支",
-    "ContextMenu-IssueCreateBranchGitFlowHotfix": "Gitflow: 建立修正分支",
+    "ContextMenu-IssueCreateBranchGitFlowHotfix": "Gitflow: 建立熱修復分支",
     "ContextMenu-IssueCreateBranchGitFlowRelease": "Gitflow: 建立發佈分支",
     "ContextMenu-IssueCopyXLink": "複製 {0} 連結",
     "ContextMenu-IssueViewXOnY": "在 {1} 檢視 {1}",
