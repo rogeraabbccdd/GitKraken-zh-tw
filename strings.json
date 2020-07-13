@@ -1613,12 +1613,12 @@
 
     "CommitMessage-RemoteBranchCreated": "Branch: created {0}",
 
-    "GitHubActionForm-AddWorkflow": "Create a Workflow",
-    "GitHubActionForm-AddGitHubWorkflowButtonLabel": "Create Workflow",
-    "GitHubActionForm-SearchTemplates": "search templates",
-    "GitHubActionForm-SelectTemplate": "Select a template",
-    "GitHubActionForm-WorkflowFileName": "File name",
-    "GitHubActionForm-WorkflowName": "Workflow name",
+    "GitHubActionForm-AddWorkflow": "建立一個 Workflow",
+    "GitHubActionForm-AddGitHubWorkflowButtonLabel": "建立 Workflow",
+    "GitHubActionForm-SearchTemplates": "搜尋模板",
+    "GitHubActionForm-SelectTemplate": "選擇一個模板",
+    "GitHubActionForm-WorkflowFileName": "檔案名稱",
+    "GitHubActionForm-WorkflowName": "Workflow 名稱",
 
     "GloForm-AddCardButtonLabel": "Create Card",
 
