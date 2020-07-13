@@ -1525,12 +1525,12 @@
     "ToolbarButton-TimelinesDropdownFilterPlaceholder": "Filter timelines",
     "ToolbarButton-DropdownFilterNoResults": "No results",
 
-    "TabsBar-NewTabTitle": "New Tab",
-    "TabsBar-NewTab": "New Tab",
-    "TabsBar-CloseTab": "Close Tab",
-    "TabsBar-ReleaseNotesTitle": "Release Notes",
+    "TabsBar-NewTabTitle": "新分頁",
+    "TabsBar-NewTab": "新分頁",
+    "TabsBar-CloseTab": "關閉分頁",
+    "TabsBar-ReleaseNotesTitle": "版本資訊",
 
-    "ReleaseNotesTab-LoadingReleaseNotes": "Loading Release Notes",
+    "ReleaseNotesTab-LoadingReleaseNotes": "正在載入版本資訊",
 
     "ProvideFeedback-SendUsFeedback": "提供意見",
     "SendUsFeedback": "提供意見",
@@ -1611,7 +1611,7 @@
     "PromptForNewBranchName-Message": "重信命名 '{0}' 為：",
     "PromptForNewBranchName-Placeholder": "新分支名稱",
 
-    "CommitMessage-RemoteBranchCreated": "Branch: created {0}",
+    "CommitMessage-RemoteBranchCreated": "分支: 建立 {0}",
 
     "GitHubActionForm-AddWorkflow": "建立一個 Workflow",
     "GitHubActionForm-AddGitHubWorkflowButtonLabel": "建立 Workflow",
@@ -1620,9 +1620,9 @@
     "GitHubActionForm-WorkflowFileName": "檔案名稱",
     "GitHubActionForm-WorkflowName": "Workflow 名稱",
 
-    "GloForm-AddCardButtonLabel": "Create Card",
+    "GloForm-AddCardButtonLabel": "建立 Card",
 
-    "JiraIssueForm-AddIssueButtonLabel": "Create Issue",
+    "JiraIssueForm-AddIssueButtonLabel": "建立議題",
 
     "RemoteForm-AddRemote": "加入遠端",
     "RemoteForm-AddRemoteButtonLabel": "加入遠端",
@@ -1659,12 +1659,12 @@
       "我們正在檢索許多與此儲存庫關聯的分叉。從 {0} 取得 URL 可能會更快。",
     "RemoteForm-Url": "URL",
 
-    "MergeConflictsPanel-1ConflictMustBeResolved": "1 conflict must be resolved before continuing",
-    "MergeConflictsPanel-NConflictsMustBeResolved": "{0} conflicts must be resolved before continuing",
+    "MergeConflictsPanel-1ConflictMustBeResolved": "請在繼續前解決 1 個衝突",
+    "MergeConflictsPanel-NConflictsMustBeResolved": "請在繼續前解決 {0} 個衝突",
 
-    "SetUpstreamPrompt-InvalidBranchName": "The given branch name is not valid",
-    "SetUpstreamPrompt-MustSelectRemote": "You have to select a remote (e.g. \"origin/<branch>\")",
-    "SetUpstreamPrompt-SelectRemoteBranchMessage": "What remote/branch should \"{0}\" push to and pull from?",
+    "SetUpstreamPrompt-InvalidBranchName": "輸入的分支名稱無效",
+    "SetUpstreamPrompt-MustSelectRemote": "您必須選擇一個遠端 (例如 \"origin/<分支>\")",
+    "SetUpstreamPrompt-SelectRemoteBranchMessage": "請設定 \"{0}\" 的遠端分支。",
 
     "ConfirmationMessage-ClonePullRequestHead": "Do you want to add \"{0}\" as a remote and checkout \"{1}\"?",
     "ConfirmationMessage-DeleteConfigLock":
