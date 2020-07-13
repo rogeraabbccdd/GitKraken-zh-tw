@@ -660,7 +660,7 @@
     "Rebasing-AutoStashLabel": "正在擱置未提交的變更",
     "Rebasing-PoppingAutoStashLabel": "正在提取自動擱置的變更",
 
-    "ReflogAction": "使用參照日誌 \"{0}\" 的操作",
+    "ReflogAction": "使用參照紀錄 \"{0}\" 的操作",
     "ReflogActionCommit": "提交 \"{0}\"",
     "ReflogActionCommitAmend": "提交修訂 \"{0}\"",
     "ReflogActionCheckout": "從 \"{0}\" 簽出到 \"{1}\"",
@@ -975,8 +975,8 @@
 
     "RightPanel-FilterFiles": "篩選檔案",
     "RightPanel-MergeConflictsDetected": "偵測到合併衝突",
-    "RightPanel-1ChangeOn": "1 個檔案變更",
-    "RightPanel-NChangesOn": "{0} 個檔案變更",
+    "RightPanel-1ChangeOn": "1 個檔案變更於",
+    "RightPanel-NChangesOn": "{0} 個檔案變更於",
     "RightPanel-NCommitsSelected": "{0} 個已選提交",
     "RightPanel-PinToBottom": "釘選到底部",
     "RightPanel-PinToRight": "釘選到右邊",
@@ -1202,9 +1202,9 @@
     "SSHConfig-SSHPrivateKey": "SSH 私鑰",
     "SSHConfig-SSHPublicKey": "SSH 公鑰",
     "SSHConfig-SSHKeySaveLocation": "SSH 金鑰儲存路徑",
-    "Authentication-ForgetAllCredentials": "忘記全部使用者名稱和密碼",
+    "Authentication-ForgetAllCredentials": "忘記全部的使用者名稱和密碼",
     "Authentication-ForgetAll": "忘記全部",
-    "Authentication-NoCredentialsToRemove": "GitKraken 沒有儲存任何證書",
+    "Authentication-NoCredentialsToRemove": "GitKraken 沒有儲存任何憑證",
 
     "Service": "服務",
     "Services": "服務",
