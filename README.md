@@ -9,6 +9,13 @@
 - 下載 `strings.json`
 - 取代 `%LOCALAPPDATA%\gitkraken\app-x.x.x\resources\app.asar.unpacked\src\strings.json`，`x.x.x` 為版本代號
 
+## 更新翻譯檔
+當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式  
+- 安裝 [Node.js](https://nodejs.org/en/)
+- 下載 `update.js` 到翻譯檔資料夾
+- 將 `strings.json` 重新命名為 `strings.en.json`
+- 用終端機開啟翻譯檔資料夾，執行 `node update.js`
+
 ## 翻譯參考
 - [VSCode 繁體中文語言包](https://github.com/microsoft/vscode-loc/tree/master/i18n/vscode-language-pack-zh-hant)
 - [k-skye 的 gitkraken-chinese](https://github.com/k-skye/gitkraken-chinese)
