@@ -1008,7 +1008,7 @@
     "Merge-Commit": "提交",
     "Merge-ConflictXofY": "衝突 {0}/{1}",
     "Merge-DontTake": "不要使用這行",
-    "Merge-NoAncestorFile": "沒有祖代檔案",
+    "Merge-NoAncestorFile": "沒有上級檔案",
     "Merge-NoImage": "沒有圖片",
     "Merge-Reset": "清除選擇",
     "Merge-ResetMerge": "重設",
