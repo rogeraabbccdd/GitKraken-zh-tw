@@ -11,10 +11,11 @@
 - 目前支援版本: 7.1.0
 
 ## 更新翻譯檔
-當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式  
+當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式，避免使用時出現問題    
 - 安裝 [Node.js](https://nodejs.org/en/)
 - 下載 `update.js` 到翻譯檔資料夾
-- 將 `strings.json` 重新命名為 `strings.en.json`
+- 將新版的英文 `strings.json` 重新命名為 `strings.en.json`
+- 將未更新的中文翻譯檔 `strings.json` 放入資料夾
 - 用終端機開啟翻譯檔資料夾，執行 `node update.js`
 
 ## 翻譯參考
