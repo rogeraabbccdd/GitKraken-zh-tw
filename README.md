@@ -1,7 +1,7 @@
 # GitKraken 正體中文 (台灣) 翻譯
 
 [GitKraken](https://www.gitkraken.com/) 正體中文 (台灣) 翻譯補丁  
-翻譯內容還不完整，歡迎 PR 修正內容或協助翻譯  
+已全部翻譯完畢，歡迎 PR 修正內容或協助翻譯  
   
 ![screenshot](./screenshot.png)
 
