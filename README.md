@@ -8,7 +8,7 @@
 ## 使用方法
 - 下載 `strings.json`
 - 取代 `%LOCALAPPDATA%\gitkraken\app-x.x.x\resources\app.asar.unpacked\src\strings.json`，`x.x.x` 為版本代號
-- 目前支援版本: 7.1.0
+- 目前支援版本: 7.2.0
 
 ## 更新翻譯檔
 當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式，避免使用時出現問題    
