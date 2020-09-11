@@ -1948,7 +1948,6 @@
     "Error-DiscardSelectionFailed": "Discarding selection failed",
     "Error-DisconnectingServiceFailed": "Service disconnection failed",
     "Error-RemoveSSHKeyFromServiceFailed": "SSH key disconnection failed",
-    "Error-FeedbackSendFailure": "Failed to send feedback",
     "Error-FetchFailedWithName": "Fetch failed for '{0}'",
     "Error-FetchAllPullRequestsFailed": "Fetching pull requests failed",
     "Error-GenerateDiff3Failed": "Generating diff for conflict failed",
