@@ -7,8 +7,8 @@
 
 ## 使用方法
 - 下載 `strings.json`
-- 取代 `%LOCALAPPDATA%\gitkraken\app-7.3.0\resources\app.asar.unpacked\src\strings.json`
-- 目前支援版本: 7.3.0
+- 取代 `%LOCALAPPDATA%\gitkraken\app-7.3.1\resources\app.asar.unpacked\src\strings.json`
+- 目前支援版本: 7.3.1
 
 ## 更新翻譯檔格式
 當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式，避免使用時出現問題    
