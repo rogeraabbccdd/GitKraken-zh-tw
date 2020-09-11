@@ -1804,7 +1804,6 @@
     "Error-DiscardSelectionFailed": "捨棄所選失敗",
     "Error-DisconnectingServiceFailed": "服務中斷連接失敗",
     "Error-RemoveSSHKeyFromServiceFailed": "SSH 金鑰中斷連接失敗",
-    "Error-FeedbackSendFailure": "傳送意見失敗",
     "Error-FetchFailedWithName": "擷取 '{0}' 失敗",
     "Error-FetchAllPullRequestsFailed": "擷取提取請求失敗",
     "Error-GenerateDiff3Failed": "產生衝突變更失敗",
