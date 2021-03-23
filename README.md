@@ -9,7 +9,7 @@
 - 下載 `strings.json`
 - 取代檔案
   - Windows: `%LOCALAPPDATA%\gitkraken\app-7.5.2\resources\app.asar.unpacked\src\strings.json`
-  - Mac: `/Applications/GitKraken.app/Contents/Resources/app/src/strings.json`
+  - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
   - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src`
 - 目前支援版本: 7.5.2
 
