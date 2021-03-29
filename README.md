@@ -6,7 +6,7 @@
 ![screenshot](./screenshot.png)
 
 ## 使用方法
-- 下載 `strings.json`
+- 至 [Release](https://github.com/rogeraabbccdd/GitKraken-zh-tw/releases/latest) 下載 `strings.json`
 - 取代檔案
   - Windows: `%LOCALAPPDATA%\gitkraken\app-7.5.3\resources\app.asar.unpacked\src\strings.json`
   - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
