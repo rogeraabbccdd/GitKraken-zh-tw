@@ -1,7 +1,7 @@
 {
   "languageOption": {
-    "label": "English (US)",
-    "value": "en-us"
+    "label": "正體中文 (台灣)",
+    "value": "zh-TW"
   },
   "menuStrings": {
     "ProductName": "<%= productName %>",
