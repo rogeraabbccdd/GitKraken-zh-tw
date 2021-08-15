@@ -6,12 +6,14 @@
 ![screenshot](./screenshot.png)
 
 ## 使用方法
+- 目前支援版本: 7.7.2
 - 至 [Release](https://github.com/rogeraabbccdd/GitKraken-zh-tw/releases/latest) 下載 `strings.json`
 - 取代檔案
   - Windows: `%LOCALAPPDATA%\gitkraken\app-7.7.2\resources\app.asar.unpacked\src\strings.json`
   - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
   - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src`
-- 目前支援版本: 7.7.2
+- 重新開啟 GitKraken 後，至 Preference -> UI Customization -> Language 切換語言
+  ![screenshot](./preferences.png)
 
 ## 更新翻譯檔格式
 當新版本 GitKraken 發佈時，請使用 `update.js` 將翻譯檔更新為新版本的格式，避免使用時出現問題    
