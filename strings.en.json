@@ -84,6 +84,7 @@
     "CloseTab": "Close Tab",
     "SelectNextTab": "Select Next Tab",
     "SelectPreviousTab": "Select Previous Tab",
+    "OpenTabsList": "Open Tabs List",
     "SelectTab1": "Select Tab 1",
     "SelectTab2": "Select Tab 2",
     "SelectTab3": "Select Tab 3",
@@ -1813,7 +1814,8 @@
     "TabsBar-Projects": "Projects",
     "TabsBar-SingleProject": "Project",
     "TabsBar-ReleaseNotesTitle": "Release Notes",
-    "TabsBar-TabsList": "Tabs list",
+    "TabsBar-TabsList": "Tabs list ({0} + Shift + A)",
+    "TabsBar-SearchTabs": "Search Tabs",
 
     "ReleaseNotesTab-LoadingReleaseNotes": "Loading Release Notes",
 
@@ -2139,6 +2141,7 @@
     "KeyBinding-JumpToSpecificTab": "Jump to a specific tab",
     "KeyBinding-Unstage": "Unstage Current File",
     "KeyBinding-UnstageAll": "Unstage All Files",
+    "KeyBinding-OpenTabsList": "Open tabs list",
 
     "Notification-AlreadyUpToDate": "Already Up-to-Date",
     "Notification-AppUpdateAvailable": "Version {0} of GitKraken is now available.",
