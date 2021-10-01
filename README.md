@@ -6,10 +6,10 @@
 ![screenshot](./screenshot.png)
 
 ## 使用方法
-- 目前支援版本: 8.0.0
+- 目前支援版本: 8.0.1
 - 至 [Release](https://github.com/rogeraabbccdd/GitKraken-zh-tw/releases/latest) 下載 `strings.json`
 - 取代檔案
-  - Windows: `%LOCALAPPDATA%\gitkraken\app-8.0.0\resources\app.asar.unpacked\src\strings.json`
+  - Windows: `%LOCALAPPDATA%\gitkraken\app-8.0.1\resources\app.asar.unpacked\src\strings.json`
   - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
   - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src`
 - 重新開啟 GitKraken 後，至 Preference -> UI Customization -> Language 切換語言
