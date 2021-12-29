@@ -1849,6 +1849,8 @@
     "TabsBar-ReleaseNotesTitle": "Release Notes",
     "TabsBar-TabsList": "Tabs list ({0} + Shift + A)",
     "TabsBar-SearchTabs": "Search Tabs",
+    "TabsBar-WorkspaceIconTooltip": "Workspaces",
+    "TabsBar-RepoManagementIconTooltip": "Repo Management",
 
     "ReleaseNotesTab-LoadingReleaseNotes": "Loading Release Notes",
 
