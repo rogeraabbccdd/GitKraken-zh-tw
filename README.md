@@ -7,7 +7,7 @@
 
 ## 使用方法
 - 目前支援版本: 8.3.0
-- 至 [Release](https://github.com/rogeraabbccdd/GitKraken-zh-tw/releases/latest) 下載 `strings.json`
+- 至 [Release](https://github.com/rogeraabbccdd/GitKraken-zh-tw/releases) 下載 `strings.json`
 - 取代檔案
   - Windows: `%LOCALAPPDATA%\gitkraken\app-8.3.0\resources\app.asar.unpacked\src\strings.json`
   - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
