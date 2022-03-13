@@ -1737,6 +1737,7 @@
     "TabsBar-WorkspaceIconTooltip": "工作區",
     "TabsBar-RepoManagementIconTooltip": "管理儲存庫",
     "ReleaseNotesTab-LoadingReleaseNotes": "正在載入版本資訊",
+    "FeedbackTimeoutMessage": "請等待一段時間後再傳送更多意見，謝謝!",
     "SendUsFeedback": "提供意見",
     "SendUsFeedback-Account": "帳號",
     "SendUsFeedback-BoardsBlurb": "您也可以在我們的 {0} 檢視、按讚或送出功能請求",
