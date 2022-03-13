@@ -1861,6 +1861,7 @@
 
     "ReleaseNotesTab-LoadingReleaseNotes": "Loading Release Notes",
 
+    "FeedbackTimeoutMessage": "Please allow some time to pass before sending more feedback. Thank you!",
     "SendUsFeedback": "Send us feedback",
     "SendUsFeedback-Account": "Account",
     "SendUsFeedback-BoardsBlurb": "You can also view, upvote, or submit feature requests on our feature board at {0}.",
