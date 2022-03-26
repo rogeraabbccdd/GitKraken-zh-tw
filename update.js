@@ -7,6 +7,12 @@ const rp = require('request-promise')
 
 const config = require('./config.json')
 
+/**
+ * 單純合併兩個 JSON 語言檔
+ * @param {object} enJSON
+ * @param {object} twJSON
+ * @returns {string} 組合後的 JSON 語言檔
+ */
 function merge(enJSON, twJSON) {
   for (let key1st in enJSON) {
     for (let key2nd in enJSON[key1st]) {
@@ -18,6 +24,12 @@ function merge(enJSON, twJSON) {
   return JSON.stringify(enJSON, null, 2)
 }
 
+/**
+ * 爬取並回傳指定語言的 JSON 語言檔
+ * @param {object} config
+ * @param {string} remote_strings_url
+ * @returns {Promise<object>} 返回 JSON 語言檔
+ */
 async function getRemoteStringsJSON_by_language(config, remote_strings_url) {
   // 先從 ./update_version.json 中拿到設定並組出正確獲取翻譯 json 的 url
   const rpl = new URL(config['remote_repo_url'])
@@ -33,16 +45,34 @@ async function getRemoteStringsJSON_by_language(config, remote_strings_url) {
   })
 }
 
+/**
+ * 爬 tw 語言檔
+ * @param {object} config
+ * @returns {Promise<object>}
+ */
 async function getRemoteStringsJSON_tw(config) {
   return await getRemoteStringsJSON_by_language(
     config, config['remote_strings_tw_name'])
 }
 
+/**
+ * 爬 en 語言檔
+ * @param {object} config
+ * @returns {Promise<object>}
+ */
 async function getRemoteStringsJSON_en(config) {
   return await getRemoteStringsJSON_by_language(
     config, config['remote_strings_en_name'])
 }
 
+
+/**
+ * 尋找並取代本地的 strings.json
+ * (我知道寫的很醜，但是我也不想再改了
+ * (我不會非同步啦 _(´ཀ`」 ∠)_
+ * (請求支援
+ * @param {string}} newStringsJSON 已經合併過的新的 JSON 語言檔
+ */
 async function replace_local_strings(newStringsJSON) {
   // 判斷不同平台並設立正確的 strings_path
   const platform_type = os.type()
@@ -112,6 +142,9 @@ async function replace_local_strings(newStringsJSON) {
   }
 }
 
+/**
+ * 就...主程式(?
+ */
 async function main() {
   // 抓遠端語言 JSON 下來
   let values = await Promise.all([
@@ -126,5 +159,4 @@ async function main() {
   replace_local_strings(newStringsJSON)
 }
 
-main()
-//
+main() // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
