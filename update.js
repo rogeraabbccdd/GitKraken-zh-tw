@@ -99,10 +99,11 @@ async function replace_local_strings(newStringsJSON) {
         console.log(`${strings_path} ${err ? '不存在' : '存在'}`);
         if (err) {
           // 不正確噴錯
-          logger.error(err)
+          console.error(err)
         } else {
           // 取代 loacl 的語言檔
-          fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
+          fs.writeFile(strings_path, newStringsJSON, 'utf8', (err) => {
+            if (err) throw err;
             console.log('finished')
           })
         }
