@@ -1,0 +1,8 @@
+{
+  "local_strings_version": "8.3.3",
+  "remote_repo_url": "https://github.com/we684123/GitKraken-zh-tw",
+  "usercontent_base_url":"https://raw.githubusercontent.com",
+  "aims_branche": "master",
+  "remote_strings_en_name": "strings.en.json",
+  "remote_strings_tw_name": "strings.json"
+}
