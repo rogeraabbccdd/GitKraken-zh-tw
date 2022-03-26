@@ -23,7 +23,7 @@ async function getRemoteStringsJSON_by_language(config, remote_strings_url) {
     `${config['aims_branche']}/${remote_strings_url}`,
   ].join('')
 
-  // 發出請求以獲得結果
+  // 用上面種里的 url 發出請求以獲得結果
   return await rp({
     url: remote_strings_tw_url,
     json: true,
@@ -40,6 +40,8 @@ async function getRemoteStringsJSON_en(config) {
     config, config['remote_strings_en_name'])
 }
 
+
+// 抓遠端語言 JSON 下來
 let values = await Promise.all([
   getRemoteStringsJSON_en(config),
   getRemoteStringsJSON_tw(config)
@@ -47,8 +49,13 @@ let values = await Promise.all([
 const enJSON = values[0]
 const twJSON = values[1]
 
+// 進行取代後輸出新的 JSON 語言檔
 const newStringsJSON = merge(enJSON, twJSON)
 
+// 取代 loacl 的語言檔
+fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
+  console.log('finished')
+})
 
 
 //
