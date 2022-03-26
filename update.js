@@ -40,22 +40,23 @@ async function getRemoteStringsJSON_en(config) {
     config, config['remote_strings_en_name'])
 }
 
+async function main() {
+  // 抓遠端語言 JSON 下來
+  let values = await Promise.all([
+    getRemoteStringsJSON_en(config),
+    getRemoteStringsJSON_tw(config)
+  ]);
+  const enJSON = values[0]
+  const twJSON = values[1]
 
-// 抓遠端語言 JSON 下來
-let values = await Promise.all([
-  getRemoteStringsJSON_en(config),
-  getRemoteStringsJSON_tw(config)
-]);
-const enJSON = values[0]
-const twJSON = values[1]
+  // 進行取代後輸出新的 JSON 語言檔
+  const newStringsJSON = merge(enJSON, twJSON)
 
-// 進行取代後輸出新的 JSON 語言檔
-const newStringsJSON = merge(enJSON, twJSON)
+  // 取代 loacl 的語言檔
+  fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
+    console.log('finished')
+  })
+}
 
-// 取代 loacl 的語言檔
-fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
-  console.log('finished')
-})
-
-
+main()
 //
