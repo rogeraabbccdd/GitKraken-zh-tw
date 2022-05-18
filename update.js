@@ -140,6 +140,12 @@ async function replace_local_strings(newStringsJSON) {
       });
     })
   }
+  console.log('Press any key to exit');
+  if (process.stdin.isTTY) {
+      process.stdin.setRawMode(true);
+  }
+  process.stdin.resume();
+  process.stdin.on('data', process.exit.bind(process, 0));
 }
 
 /**
