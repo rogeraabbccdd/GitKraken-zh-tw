@@ -134,13 +134,13 @@ async function replace_local_strings(newStringsJSON) {
           // 取代 loacl 的語言檔
           fs.writeFile(strings_path, newStringsJSON, 'utf8', (err) => {
             if (err) throw err;
-            console.log('finished')
+            console.log('轉換 GitKraken 語言完成.')
           })
         }
       });
     })
   }
-  console.log('Press any key to exit');
+  console.log('輸入任意鍵結束.');
   if (process.stdin.isTTY) {
       process.stdin.setRawMode(true);
   }
