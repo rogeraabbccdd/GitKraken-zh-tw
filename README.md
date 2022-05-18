@@ -29,7 +29,7 @@ npm install --save request-promise
 
 1. 下載 `strings.en.json` 並改名為 `strings.json`
 2. 依你的 OS 把`strings.json`丟過去取代
-   - Windows: `%LOCALAPPDATA%\gitkraken\app-8.3.3\resources\app.asar.unpacked\src\strings.json`
+   - Windows: `%LOCALAPPDATA%\gitkraken\app-8.4.0\resources\app.asar.unpacked\src\strings.json`
    - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
    - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src/strings.json`
 3. 重開你的 GitKraken
