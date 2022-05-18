@@ -1,9 +1,9 @@
 # GitKraken 正體中文 (台灣) 翻譯
 
-ℹ️ 目前支援版本: 8.3.3
+ℹ️ 目前支援版本: 8.4.0
 [GitKraken](https://www.gitkraken.com/) 正體中文 (台灣) 翻譯補丁  
 目前以緩慢速度翻譯中，8.4.0 除部分 Npm 與 Yarn 指令說明外其他皆翻譯完畢  
-  
+
 ![screenshot](./screenshot.png)
 
 ## 準備環境
@@ -39,7 +39,7 @@ npm install --save request-promise
 ```
 {
   // 這份專案的翻譯版本(預計給使用者比較用，但目前沒有任何效果)
-  "local_strings_version": "8.3.3",
+  "local_strings_version": "8.4.0",
   // 翻譯來源的倉庫，改成自己喜歡的作者就好
   "remote_repo_url": "https://github.com/we684123/GitKraken-zh-tw",
   // 直接獲取json的基本網址 (你應該不會碰到?
