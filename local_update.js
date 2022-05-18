@@ -58,7 +58,13 @@ async function main() {
 
   // 取代 loacl 的語言檔
   fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
-    console.log('finished')
+    console.log('轉換 GitKraken 語言完成.')
+    console.log('輸入任意鍵結束.');
+    if (process.stdin.isTTY) {
+        process.stdin.setRawMode(true);
+    }
+    process.stdin.resume();
+    process.stdin.on('data', process.exit.bind(process, 0));
   })
 }
 

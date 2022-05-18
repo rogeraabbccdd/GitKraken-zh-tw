@@ -1,2 +1,1 @@
 node update.js
-pause

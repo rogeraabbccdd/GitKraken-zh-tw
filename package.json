@@ -1,0 +1,29 @@
+{
+  "name": "gitkraken-zh-tw",
+  "version": "0.1.0",
+  "description": "正體中文 (台灣) 翻譯補丁",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_windows": "pkg . --target node16-win-x64 --output update_for_windows",
+    "build_linux": "pkg . --target node16-linux-x64 --output update_for_linux",
+    "build_macos": "pkg . --target node16-macos-x64 --output update_for_macos",
+    "build_all_platform": "npm run build_windows && npm run build_linux && npm run build_macos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we684123/GitKraken-zh-tw.git"
+  },
+  "keywords": [
+    "gitkraken",
+    "中文",
+    "翻譯"
+  ],
+  "author": "rogeraabbccdd, SiongSng, we684123",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/we684123/GitKraken-zh-tw/issues"
+  },
+  "homepage": "https://github.com/we684123/GitKraken-zh-tw#readme",
+  "bin": "./update.js"
+}

@@ -39,7 +39,7 @@ npm install --save request-promise
 ```
 {
   // 這份專案的翻譯版本(預計給使用者比較用，但目前沒有任何效果)
-  "local_strings_version": "8.3.3",
+  "local_strings_version": "8.4.0",
   // 翻譯來源的倉庫，改成自己喜歡的作者就好
   "remote_repo_url": "https://github.com/we684123/GitKraken-zh-tw",
   // 直接獲取json的基本網址 (你應該不會碰到?
