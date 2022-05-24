@@ -12,7 +12,6 @@
 2. 安裝下列模組
 
 ```
-npm install --save request
 npm install --save request-promise
 npm install --save json5
 ```
