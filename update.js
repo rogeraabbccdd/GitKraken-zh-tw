@@ -88,7 +88,7 @@ async function replace_local_strings(newStringsJSON) {
       console.log(`${strings_path} ${err ? '不存在' : '存在'}`);
       if (err) {
         // 不正確噴錯
-        logger.error(err)
+        console.error(err)
       } else {
         // 取代 loacl 的語言檔
         fs.writeFile('./strings.json', newStringsJSON, 'utf8', () => {
@@ -117,7 +117,7 @@ async function replace_local_strings(newStringsJSON) {
   } else {
     // 在 Windows_NT 上
     // 生出 strings_path
-    await child_process.exec('gitkraken -v', (error, stdout, stderr) => {
+    await child_process.exec('gitkraken -v', (error, stdout) => {
       let gitkraken_version = stdout
       strings_path = [
         process.env['LOCALAPPDATA'],
