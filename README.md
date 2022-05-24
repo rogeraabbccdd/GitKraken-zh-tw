@@ -6,7 +6,7 @@
 
 ![screenshot](./screenshot.png)
 
-## 準備環境
+## 開發環境
 
 1. 安裝 [Node.js](https://nodejs.org/en/)
 2. 安裝下列模組
@@ -14,6 +14,7 @@
 ```
 npm install --save request
 npm install --save request-promise
+npm install --save json5
 ```
 
 ## 使用及更新方法
