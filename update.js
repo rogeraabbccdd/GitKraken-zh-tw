@@ -4,8 +4,11 @@ const path = require('path');
 const child_process = require('child_process');
 
 const rp = require('request-promise')
+const JSON5 = require('json5');
+require('json5/lib/register')
 
-const config = require('./config.json')
+const config = require('./config.json5')
+
 
 /**
  * 單純合併兩個 JSON 語言檔
@@ -142,7 +145,7 @@ async function replace_local_strings(newStringsJSON) {
   }
   console.log('輸入任意鍵結束.');
   if (process.stdin.isTTY) {
-      process.stdin.setRawMode(true);
+    process.stdin.setRawMode(true);
   }
   process.stdin.resume();
   process.stdin.on('data', process.exit.bind(process, 0));
