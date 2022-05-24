@@ -1,10 +1,12 @@
 {
   "name": "gitkraken-zh-tw",
   "version": "0.1.0",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "description": "正體中文 (台灣) 翻譯補丁",
   "main": "update.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build_windows": "pkg . --target node16-win-x64 --output update_for_windows",
     "build_linux": "pkg . --target node16-linux-x64 --output update_for_linux",
     "build_macos": "pkg . --target node16-macos-x64 --output update_for_macos",
