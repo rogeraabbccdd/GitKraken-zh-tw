@@ -1,6 +1,6 @@
+#!/usr/bin/env node
 const os = require("os");
 const fs = require("fs");
-const path = require("path");
 const child_process = require("child_process");
 
 const rp = require("request-promise");
@@ -23,7 +23,7 @@ function merge(enJSON, twJSON) {
       }
     }
   }
-  return JSON.stringify(enJSON, null, 2);
+  return JSON5.stringify(enJSON, null, 2);
 }
 
 /**

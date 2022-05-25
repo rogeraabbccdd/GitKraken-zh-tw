@@ -1,8 +1,8 @@
 # GitKraken 正體中文 (台灣) 翻譯
 
-ℹ️ 目前支援版本: 8.4.0
+ℹ️ 目前支援版本: 8.5.0
 [GitKraken](https://www.gitkraken.com/) 正體中文 (台灣) 翻譯補丁  
-目前以緩慢速度翻譯中，8.4.0 除部分 Npm 與 Yarn 指令說明外其他皆翻譯完畢  
+目前以緩慢速度翻譯中，8.5.0 除部分 Npm 與 Yarn 指令說明外其他皆翻譯完畢  
 
 ![screenshot](./screenshot.png)
 
@@ -11,7 +11,7 @@
 1. 安裝 [Node.js](https://nodejs.org/en/)
 2. 安裝下列模組
 
-```
+```sh
 npm install --save request-promise
 npm install --save json5
 ```
@@ -29,14 +29,14 @@ npm install --save json5
 
 1. 下載 `strings.en.json` 並改名為 `strings.json`
 2. 依你的 OS 把`strings.json`丟過去取代
-   - Windows: `%LOCALAPPDATA%\gitkraken\app-8.4.0\resources\app.asar.unpacked\src\strings.json`
+   - Windows: `%LOCALAPPDATA%\gitkraken\app-8.5.0\resources\app.asar.unpacked\src\strings.json`
    - Mac: `/Applications/GitKraken.app/Contents/Resources/app.asar.unpacked/src/strings.json`
    - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src/strings.json`
 3. 重開你的 GitKraken
 
 ## config.json 設定
 
-```
+```json5
 {
   // 翻譯來源的倉庫，改成自己喜歡的作者就好
   "remote_repo_url": "https://github.com/we684123/GitKraken-zh-tw",
