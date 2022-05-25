@@ -72,7 +72,7 @@ async function getRemoteStringsJSON_en(config) {
 }
 
 async function getGitkrakenVersion() {
-  return await new Promise(function(resolve, reject) {
+  return await new Promise(function(resolve) {
     child_process.exec("gitkraken -v", (error, stdout) => {
       let gitkraken_version = String(stdout).trim();
       resolve(gitkraken_version);
@@ -143,7 +143,16 @@ async function replace_local_strings(newStringsJSON, gitkrakenVersion) {
       .trim();
   }
   writeStringsFile(strings_path);
+}
 
+/**
+ * @function inputAnyKeyToExit
+ * @description 呼叫後輸入任一鍵繼續(給使用者確認終端機輸出資訊用)
+ * @access public
+ *
+ * @return {void}
+ */
+function inputAnyKeyToExit() {
   if (process.stdin.isTTY) {
     process.stdin.setRawMode(true);
   }
@@ -161,11 +170,21 @@ async function main() {
   const enJSON = values[0];
   const twJSON = values[1];
   const gitkrakenVersion = values[2];
-  console.log(`Loacl GitKraken version = ${gitkrakenVersion}`);
 
-  // 進行取代後輸出新的 JSON 語言檔
-  const newStringsJSON = merge(enJSON, twJSON);
-  replace_local_strings(newStringsJSON, gitkrakenVersion);
+  if (gitkrakenVersion === "") {
+    const can_not_use_gitkraken_txt = [
+      "無法獲取 GitKraken 版本，",
+      "請確認是否未安裝或未將 gitkraken 指令登入環境變數"
+    ].join("");
+    console.log(can_not_use_gitkraken_txt);
+    console.log("輸入任意鍵結束...");
+  } else {
+    console.log(`Loacl GitKraken version = ${gitkrakenVersion}`);
+    // 進行取代後輸出新的 JSON 語言檔
+    const newStringsJSON = merge(enJSON, twJSON);
+    replace_local_strings(newStringsJSON, gitkrakenVersion);
+  }
+  inputAnyKeyToExit();
 }
 
 main(); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
