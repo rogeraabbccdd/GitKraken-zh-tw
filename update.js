@@ -71,6 +71,13 @@ async function getRemoteStringsJSON_en(config) {
   );
 }
 
+/**
+ * @function getGitkrakenVersion
+ * @description 獲取 gitKraken 版本
+ * @access public
+ *
+ * @return {Promise<string>} gitKraken version
+ */
 async function getGitkrakenVersion() {
   return await new Promise(function(resolve) {
     child_process.exec("gitkraken -v", (error, stdout) => {
