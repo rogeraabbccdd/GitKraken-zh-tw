@@ -4,7 +4,7 @@ const fs = require("fs");
 const child_process = require("child_process");
 
 const rp = require("request-promise");
-const JSON5 = require("json5");
+const JSON5 = require("json5"); // eslint-disable-line
 require("json5/lib/register");
 
 const config = require("./config.json5");
@@ -23,7 +23,7 @@ function merge(enJSON, twJSON) {
       }
     }
   }
-  return JSON5.stringify(enJSON, null, 2);
+  return JSON.stringify(enJSON, null, 2);
 }
 
 /**
