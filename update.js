@@ -113,7 +113,7 @@ async function replace_local_strings(newStringsJSON, gitkrakenVersion) {
         console.error(err);
       } else {
         // 取代 loacl 的語言檔
-        fs.writeFile("./strings.json", newStringsJSON, "utf8", () => {
+        fs.writeFile(strings_path, newStringsJSON, "utf8", () => {
           console.log("取代完成！");
           console.log("輸入任意鍵結束...");
         });
