@@ -121,7 +121,6 @@ async function replace_local_strings(newStringsJSON, gitkrakenVersion) {
         // 取代 loacl 的語言檔
         fs.writeFile(strings_path, newStringsJSON, "utf8", () => {
           console.log("取代完成！");
-          console.log("輸入任意鍵結束...");
         });
       }
     });
@@ -172,9 +171,24 @@ async function main(config_path) {
     var config_str = fs.readFileSync(config_path, "utf8");
     var config = JSON5.parse(config_str);
   } catch (e) {
-    console.log("'./config.json5'不存在或格式錯誤");
-    inputAnyKeyToExit();
-    return 1;
+    console.log("'./config.json5'不存在或格式錯誤，將使用預設設定");
+    var config = {
+      // 翻譯來源的倉庫，改成自己喜歡的作者就好
+      remote_repo_url: "https://github.com/rogeraabbccdd/GitKraken-zh-tw",
+      // 直接獲取json的基本網址 (你應該不會碰到?
+      usercontent_base_url: "https://raw.githubusercontent.com",
+      // 翻譯來源倉庫的分支名稱
+      aims_branche: "master",
+      // 翻譯來源倉庫的原始英文語言JSON檔名稱
+      remote_strings_en_name: "strings.en.json",
+      // 翻譯來源倉庫的中文語言JSON檔名稱
+      remote_strings_tw_name: "strings.json"
+    };
+    fs.writeFile(config_path, JSON.stringify(config, null, 2), "utf8", () => {
+      console.log(`已新增 config 至 ${config_path}`);
+    });
+  } finally {
+    console.log(`config = ${JSON.stringify(config, null, 2)}`);
   }
 
   // 抓遠端語言 JSON 下來
@@ -199,7 +213,7 @@ async function main(config_path) {
     const newStringsJSON = merge(enJSON, twJSON);
     replace_local_strings(newStringsJSON, gitkrakenVersion);
   }
-  inputAnyKeyToExit();
+  setTimeout(inputAnyKeyToExit, 1000);
 }
 
 main(config_path); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
