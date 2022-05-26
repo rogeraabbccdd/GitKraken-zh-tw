@@ -30,6 +30,7 @@
   "bin": "./update.js",
   "dependencies": {
     "request-promise": "4.2.6",
-    "json5": "2.2.1"
+    "json5": "2.2.1",
+    "pkg": "5.5.2"
   }
 }
