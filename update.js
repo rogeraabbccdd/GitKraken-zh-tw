@@ -4,10 +4,10 @@ const fs = require("fs");
 const child_process = require("child_process");
 
 const rp = require("request-promise");
-const JSON5 = require("json5"); // eslint-disable-line
+const JSON5 = require("json5");
 require("json5/lib/register");
 
-const config = require("./config.json5");
+const config_path = "./config.json5";
 
 /**
  * 單純合併兩個 JSON 語言檔
@@ -167,7 +167,15 @@ function inputAnyKeyToExit() {
   process.stdin.on("data", process.exit.bind(process, 0));
 }
 
-async function main() {
+async function main(config_path) {
+  try {
+    const config_str = fs.readFileSync(config_path, "utf8");
+    const config = JSON5.parse(config_str);
+  } catch (e) {
+    console.log("'./config.json5'不存在或格式錯誤");
+    return 1;
+  }
+
   // 抓遠端語言 JSON 下來
   let values = await Promise.all([
     getRemoteStringsJSON_en(config),
@@ -194,4 +202,4 @@ async function main() {
   inputAnyKeyToExit();
 }
 
-main(); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+main(config_path); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
