@@ -5,7 +5,6 @@ const child_process = require("child_process");
 
 const rp = require("request-promise");
 const JSON5 = require("json5");
-require("json5/lib/register");
 
 const config_path = "./config.json5";
 
