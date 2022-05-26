@@ -14,19 +14,22 @@
 ```sh
 npm install --save request-promise
 npm install --save json5
+npm install --save pkg
 ```
 
 ## 使用及更新方法
 
-不管是第一次安裝或更新後都可以直接照下面說的做
+不管是第一次安裝或更新後都可以直接照下面做
 
-- 下載專案後打開資料夾，並在該資料夾打開終端機後執行 `node update.js`
-  (Windows 使用者可以直接執行 `update.bat`)
+- 下載專案後打開資料夾，依照自己的作業系統直接執行`update_for_windows_12`、`update_for_linux_10`、`update_for_macos_10`，或終端機後執行 `node update.js`
 - 重新開啟 GitKraken 後，至 Preference -> UI Customization -> Language 切換語言
   ![screenshot](./preferences.png)
 
 ## 改壞了怎麼辦？
+有裝 NodeJS了？
+`restoreToEnglish.js` 或 `restoreToEnglish.bat` 是你的好選擇
 
+沒有的話：
 1. 下載 `strings.en.json` 並改名為 `strings.json`
 2. 依你的 OS 把`strings.json`丟過去取代
    - Windows: `%LOCALAPPDATA%\gitkraken\app-8.5.0\resources\app.asar.unpacked\src\strings.json`
@@ -34,7 +37,7 @@ npm install --save json5
    - Linux: `/usr/share/gitkraken/resources/app.asar.unpacked/src/strings.json`
 3. 重開你的 GitKraken
 
-## config.json 設定
+## config.json5 設定
 
 ```json5
 {
