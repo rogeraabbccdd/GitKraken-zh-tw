@@ -160,6 +160,7 @@ async function replace_local_strings(newStringsJSON, gitkrakenVersion) {
  * @return {void}
  */
 function inputAnyKeyToExit() {
+  console.log("input Any Key To Exit... 輸入任意鍵結束...");
   if (process.stdin.isTTY) {
     process.stdin.setRawMode(true);
   }
@@ -169,10 +170,11 @@ function inputAnyKeyToExit() {
 
 async function main(config_path) {
   try {
-    const config_str = fs.readFileSync(config_path, "utf8");
-    const config = JSON5.parse(config_str);
+    var config_str = fs.readFileSync(config_path, "utf8");
+    var config = JSON5.parse(config_str);
   } catch (e) {
     console.log("'./config.json5'不存在或格式錯誤");
+    inputAnyKeyToExit();
     return 1;
   }
 
@@ -192,7 +194,6 @@ async function main(config_path) {
       "請確認是否未安裝或未將 gitkraken 指令登入環境變數"
     ].join("");
     console.log(can_not_use_gitkraken_txt);
-    console.log("輸入任意鍵結束...");
   } else {
     console.log(`Loacl GitKraken version = ${gitkrakenVersion}`);
     // 進行取代後輸出新的 JSON 語言檔
