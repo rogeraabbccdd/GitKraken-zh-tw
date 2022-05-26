@@ -4,10 +4,10 @@ const fs = require("fs");
 const child_process = require("child_process");
 
 const rp = require("request-promise");
-const JSON5 = require("json5"); // eslint-disable-line
+const JSON5 = require("json5");
 require("json5/lib/register");
 
-const config = require("./config.json5");
+const config_path = "./config.json5";
 
 /**
  * 單純合併兩個 JSON 語言檔
@@ -160,6 +160,7 @@ async function replace_local_strings(newStringsJSON, gitkrakenVersion) {
  * @return {void}
  */
 function inputAnyKeyToExit() {
+  console.log("input Any Key To Exit... 輸入任意鍵結束...");
   if (process.stdin.isTTY) {
     process.stdin.setRawMode(true);
   }
@@ -167,7 +168,16 @@ function inputAnyKeyToExit() {
   process.stdin.on("data", process.exit.bind(process, 0));
 }
 
-async function main() {
+async function main(config_path) {
+  try {
+    var config_str = fs.readFileSync(config_path, "utf8");
+    var config = JSON5.parse(config_str);
+  } catch (e) {
+    console.log("'./config.json5'不存在或格式錯誤");
+    inputAnyKeyToExit();
+    return 1;
+  }
+
   // 抓遠端語言 JSON 下來
   let values = await Promise.all([
     getRemoteStringsJSON_en(config),
@@ -184,7 +194,6 @@ async function main() {
       "請確認是否未安裝或未將 gitkraken 指令登入環境變數"
     ].join("");
     console.log(can_not_use_gitkraken_txt);
-    console.log("輸入任意鍵結束...");
   } else {
     console.log(`Loacl GitKraken version = ${gitkrakenVersion}`);
     // 進行取代後輸出新的 JSON 語言檔
@@ -194,4 +203,4 @@ async function main() {
   inputAnyKeyToExit();
 }
 
-main(); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+main(config_path); // 施展魔法 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
