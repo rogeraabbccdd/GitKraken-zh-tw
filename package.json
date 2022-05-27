@@ -2,7 +2,7 @@
   "name": "gitkraken-zh-tw",
   "version": "0.1.0",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "description": "正體中文 (台灣) 翻譯補丁",
   "main": "update.js",
