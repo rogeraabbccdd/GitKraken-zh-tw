@@ -1,0 +1,56 @@
+{
+  "name": "gitkraken-zh-tw",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "description": "正體中文 (台灣) 翻譯補丁",
+  "main": "update.js",
+  "pkg:v5.7.0 目前可以編譯": [8, 10, 12, 14, 16, 18],
+  "scripts": {
+    "pkg_version": "pkg -v",
+    "build_windows10": "pkg update.js --target node10-win-x64 --output update_for_windows_10",
+    "build_linux10": "pkg update.js --target node10-linux-x64 --output update_for_linux_10",
+    "build_macos10": "pkg update.js --target node10-macos-x64 --output update_for_macos_10",
+    "build_all_platform_10": "npm run build_windows10 && npm run build_linux10 && npm run build_macos10",
+    "build_windows12": "pkg update.js --target node12-win-x64 --output update_for_windows_12",
+    "build_linux12": "pkg update.js --target node12-linux-x64 --output update_for_linux_12",
+    "build_macos12": "pkg update.js --target node12-macos-x64 --output update_for_macos_12",
+    "build_all_platform_12": "npm run build_windows12 && npm run build_linux12 && npm run build_macos12",
+    "build_windows14": "pkg update.js --target node14-win-x64 --output update_for_windows_14",
+    "build_linux14": "pkg update.js --target node14-linux-x64 --output update_for_linux_14",
+    "build_macos14": "pkg update.js --target node14-macos-x64 --output update_for_macos_14",
+    "build_all_platform_14": "npm run build_windows14 && npm run build_linux14 && npm run build_macos14",
+    "build_windows16": "pkg update.js --target node16-win-x64 --output update_for_windows_16",
+    "build_linux16": "pkg update.js --target node16-linux-x64 --output update_for_linux_16",
+    "build_macos16": "pkg update.js --target node16-macos-x64 --output update_for_macos_16",
+    "build_all_platform_16": "npm run build_windows16 && npm run build_linux16 && npm run build_macos16",
+    "build_windows18": "pkg update.js --target node18-win-x64 --output update_for_windows_18",
+    "build_linux18": "pkg update.js --target node18-linux-x64 --output update_for_linux_18",
+    "build_macos18": "pkg update.js --target node18-macos-x64 --output update_for_macos_18",
+    "build_all_platform_18": "npm run build_windows18 && npm run build_linux18 && npm run build_macos18",
+    "build_all_platform": "npm run build_all_platform_10 && npm run build_all_platform_12 && npm run build_all_platform_14 && npm run build_all_platform_16 && npm run build_all_platform_18",
+    "build_all_platform_best":"npm run build_windows12 && npm run build_linux10 && npm run build_macos10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we684123/GitKraken-zh-tw.git"
+  },
+  "keywords": [
+    "gitkraken",
+    "中文",
+    "翻譯"
+  ],
+  "author": "rogeraabbccdd, SiongSng, we684123",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/we684123/GitKraken-zh-tw/issues"
+  },
+  "homepage": "https://github.com/we684123/GitKraken-zh-tw#readme",
+  "bin": "./update.js",
+  "dependencies": {
+    "json5": "^2.2.1",
+    "pkg": "^5.7.0",
+    "request-promise": "^4.2.6"
+  }
+}
