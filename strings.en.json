@@ -656,6 +656,7 @@
     "CommitButtonLabelAddMessage": "Type a message to commit",
     "CommitButtonLabelPlural": "Commit changes to {0} files",
     "CommitButtonLabelSingular": "Commit changes to 1 file",
+    "CommitButtonLabelSkipHooks": "Commit and skip hooks",
     "ForcePushButtonLabel": "Force Push",
     "SupportButtonLabel": "Support",
     "Communication-SupportFormSubject": "GitKraken Client Support Request",
@@ -677,6 +678,7 @@
     "AmendPreviousCommitButtonLabel": "Amend Previous Commit",
     "AmendOrRewordPreviousCommitMessageButtonLabel": "Update Message",
     "AmendPreviousCommitMessageTip": "Click to amend your commit message",
+    "AmendStashMessageTip": "Click to amend your stash message",
     "RewordCommitMessageTooltip": "Click to reword your commit message",
     "RewordCommitMessageHelperText": "Rewording this commit message will cause {0} commits to be rebased.",
     "RewordInputTitle":"Reword commit message",
@@ -747,6 +749,7 @@
 
     "ContextMenu-AddToDictionary": "Add to Dictionary",
     "ContextMenu-AmendOrRewordCommitMessage": "Edit commit message",
+    "ContextMenu-AmendStashMessage": "Edit stash message",
     "ContextMenu-AnnotateTag": "Annotate {0}",
     "ContextMenu-CheckoutBranch": "Checkout {0}",
     "ContextMenu-CheckoutCommit": "Checkout this commit",
@@ -1282,6 +1285,7 @@
     "FileViewPanel-History": "History",
     "FileViewPanel-Blame": "Blame",
 
+    "PendingInteractiveRebasePanel-InteractiveRebase": "Interactive Rebase",
     "PendingInteractiveRebasePanel-Reset": "Reset",
     "PendingInteractiveRebasePanel-CancelRebase": "Cancel Rebase",
     "PendingInteractiveRebasePanel-StartRebase": "Start Rebase",
@@ -1420,6 +1424,8 @@
     "GeneralPreferences-AutoCrlfHelp": "Sets core.autocrlf in your global Git Config.",
     "GeneralPreferences-Longpaths": "Longpaths",
     "GeneralPreferences-LongpathsHelp": "Sets core.longpaths in your global Git Config. By default, Windows only supports file paths less than 260 characters. Enable support for longer file paths.",
+    "GeneralPreferences-GitCliPoc": "Git CLI POC",
+    "GeneralPreferences-GitCliPocHelp": "Proof of concept - replace some libgit2 usage with Git.",
     "GeneralPreferences-GitConfigDefault": "Git Config Default",
     "GeneralPreferences-GitkrakenTerminal": "Gitkraken Terminal",
     "GeneralPreferences-RememberTabs": "Remember tabs",
@@ -1435,6 +1441,10 @@
     "GeneralPreferences-ShowAllCommitsInGraph": "Show All Commits in Graph",
     "GeneralPreferences-ShowAllCommitsInGraphWarning": "Enabling this option may adversely affect performance.",
     "GeneralPreferences-UseExtendedLogging": "Use extended logging in activity log",
+    "GeneralPreferences-OpenUrlInHost": "Open URLs in Windows Default Browser",
+    "GeneralPreferences-OpenUrlInHostHelp": "If enabled, all URLs GitKraken opens will open in your Windows default browser.",
+    "GeneralPreferences-OpenFileInHost": "Open Files and Directories in Windows",
+    "GeneralPreferences-OpenFileInHostHelp": "If enabled, all files and directories GitKraken opens will open in the Windows default program for that file type.",
 
     "SyncWithSystem": "Sync with system",
 
@@ -1554,6 +1564,10 @@
 
     "Shop-ShopTitle": "Account Management",
     "Shop-OpenInBrowser": "Open in browser",
+
+    "Encoding-Label": "Encoding",
+    "Encoding-Help": "Default encoding when reading or writing files in this repo.",
+    "Encoding-Description": "Default encoding",
 
     "CommitTemplate": "Commit Template",
     "CommitTemplates-Description": "Description",
@@ -2351,6 +2365,7 @@
     "Error-StageFilemodeFailed": "Stage filemode failed",
     "Error-StagePathsFailed": "Staging paths failed",
     "Error-StageSelectionFailed": "Staging selection failed",
+    "Error-StashAmendFailed": "Amend stash failed",
     "Error-StashConflictingFiles": "Cannot stash conflicted files.",
     "Error-StashNoValidFiles": "Did not find valid files to stash.",
     "Error-SyncingPreferences": "We were unable to sync this preference. Please check your internet connection and try again",
@@ -2457,8 +2472,8 @@
     "FirstRepoModal-Title": "Welcome to GitKraken Client!",
     "FirstRepoModal-Body": "Open your first repository to get started.",
     "FirstRepoModal-Tip": "Tip: after opening a repo, use the Command Palette ({0} + P) to quickly access actions",
-    "FirstRepoModal-Clone": "Clone a repository",
-    "FirstRepoModal-Browse": "Browse repositories",
+    "FirstRepoModal-Clone": "Clone a remote repository",
+    "FirstRepoModal-Browse": "Open an existing repository on your machine",
 
     "CheckoutError-CloseDetailPanel": "To checkout, please save your changes and try again.",
     "MergeError-CloseDetailPanel": "To merge, please save your changes and try again.",
@@ -3100,7 +3115,7 @@
     "Workspace-BrowseRepositories": "Browse repositories",
     "Workspace-ImportFromVSCode": "Import VS Code Workspace",
     "Workspace-SelectReposDescription": "Select individual repos, a directory of repos, or an existing VS Code Workspace (.code-workspace)",
-    "Workspace-CreateCloudWorkspace": "Create cloud workspace",
+    "Workspace-CreateCloudWorkspace": "Create Cloud Workspace",
     "Workspace-PreviousXDays": "Previous {0} days",
     "Workspace-InsightsCtaDismiss": "Dismiss",
     "Workspace-CreateLocalWorkspace": "Create Local Workspace",
@@ -3994,7 +4009,6 @@
     "WorkspacePullRequestMetrics-PullRequests": "Pull Requests",
     "WorkspacePullRequestMetrics-PRsMerged": "Pull Requests Merged",
     "WorkspacePullRequestMetrics-PRsMergedOpened": "PRs merged / opened",
-    "WorkspacePullRequestMetrics-PercentDayChange": "Previous {0} days",
 
     "WorkspaceListFilter-Teams": "Teams",
     "WorkspaceListFilter-ShowAllTeams": "Show all Team Workspaces",
@@ -4035,7 +4049,6 @@
     "SingleWorkspaceTab-Repositories": "Repositories",
     "SingleWorkspaceTab-TeamWorkspace": "Team Workspace ({0})",
 
-    "AddEditWorkspace-CreateCloudWorkspace": "Create Cloud Workspace",
     "AddEditWorkspace-CreateCloudWorkspaceFrom": "Create Cloud Workspace from",
     "AddEditWorkspace-CreateLocalWorkspace": "Create Local Workspace",
     "AddEditWorkspace-Creating": "Creating...",
@@ -4110,7 +4123,6 @@
     "WorkspaceSummarySection-Edit": "Edit workspace",
     "WorkspaceSummarySection-AddRepositories": "Add repositories",
     "WorkspaceSummarySection-Delete": "Delete workspace",
-    "WorkspaceSummarySection-CreateFromLocal": "Create from local workspace",
 
     "WorkspacePullRequestSection-MyPullRequests": "MY PULL REQUESTS",
     "WorkspacePullRequestSection-RepoHeader": "Repo",
@@ -4155,6 +4167,9 @@
     "WorkspaceIssuesSection-TitleNumber": "#{0}",
     "WorkspaceIssuesSection-NoIssueTrackerSelected": "No issue tracker selected",
     "WorkspaceIssuesSection-NoIssuesAvailable": "No issues available",
+    "WorkspaceIssuesSection-NoRepoFound": "Issue repo not found",
+    "WorkspaceIssuesSection-RepoNotInit": "Repo not initialized",
+    "WorkspaceIssuesSection-CreateBranch": "Create a branch",
 
     "WorkspaceMyWIPSection-TableColumns": "Work in Progress Table",
     "WorkspaceMyWIPSection-WorkInProgress": "WORK IN PROGRESS",
@@ -4211,9 +4226,26 @@
     "VelocityPanel-BannerMessage": "Optimize the velocity of your projects with insights into pull requests for all repos in this Workspace. Continually improve how quickly you and your team are innovating by understanding how many PRs are being opened and closed over time.",
     "VelocityPanel-BannerCTA": "Connect Insights to start calculating velocity",
     "VelocityPanel-ConnectWithProvider": "Connect with {0}",
-    "VelocityPanel-GitKrakenInsights": "GitKraken Insights",
-    "VelocityPanel-Disconnect": "Disconnect",
     "VelocityPanel-ProvideFeedback": "Provide feedback on Insights",
-    "VelocityPanel-FeedbackSubject": "GitKraken Insights Feedback"
+    "VelocityPanel-FeedbackSubject": "GitKraken Insights Feedback",
+
+    "VelocityAuthSection-GitKrakenInsights": "GitKraken Insights",
+    "VelocityAuthSection-ConnectInsightsWith": "Connect Insights with {0}",
+    "VelocityAuthSection-Description": "Optimize the velocity of your projects with insights into pull requests for all repos in your Workspaces.",
+
+    "WSL-DistroCommandErrorToastTitle": "Command failed in {}",
+    "WSL-HostCommandErrorToastTitle": "Command failed in Windows",
+
+    "OpenRepoExternallyToast-WindowsTitle": "Working with repositories stored on WSL is not recommended from GitKraken on Windows. Visit our Help Center for help setting up GitKraken in WSL for the best experience.",
+    "OpenRepoExternallyToast-WSLTitle": "Working with repositories stored on Windows is not recommended from GitKraken on WSL. Visit our Help Center for help setting up GitKraken in Windows for the best experience.",
+    "OpenRepoExternallyToast-OpenSupportDocs": "Open Help Center",
+    "OpenRepoExternallyToast-WSLDescription": "Attempting to work with repos stored on Windows is not currently supported from WSL.",
+    "OpenRepoExternallyToast-CheckingGKInstallStatus": "Finding GitKraken installations...",
+    "OpenRepoExternallyToast-OpenRepoInDistroName": "Open with GitKraken in {0}",
+    "OpenRepoExternallyToast-OpenRepoInHost": "Open with GitKraken in Windows",
+    "OpenRepoExternallyToast-WSLGKNotInstalled": "Install GitKraken on {0}",
+    "OpenRepoExternallyToast-WindowsGKNotInstalled": "Install GitKraken on Windows",
+    "OpenRepoExternallyToast-BackupDescription": "Unable to determine repository location",
+    "OpenRepoExternallyToast-OpenAnyways": "Open Repository Anyway"
   }
 }
