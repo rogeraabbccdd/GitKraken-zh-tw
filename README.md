@@ -2,6 +2,7 @@
 
 [GitKraken](https://www.gitkraken.com/) 正體中文 (台灣) 翻譯補丁  
 目前以緩慢速度翻譯中，9.3.0 除部分 Npm 與 Yarn 指令說明外其他皆翻譯完畢  
+**近期專案繁忙，暫停更新中，歡迎發送 Pull Request 協助翻譯**
   
 ![screenshot](./screenshot.png)
 
