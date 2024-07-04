@@ -454,7 +454,7 @@
     "FuzzyFinder-BlameFilePrefix": "究責",
     "FuzzyFinder-CheckoutRefPrefix": "簽出",
     "FuzzyFinder-ConfigureGitFlow": "設定 Gitflow",
-    "FuzzyFinder-ConfigureGpgSigning": "設定 GPG 認可簽署",
+    "FuzzyFinder-ConfigureGpgSigning": "設定 GPG 簽章",
     "FuzzyFinder-ConfigureLfs": "設定 LFS",
     "FuzzyFinder-CreateFileKeywords": "create new file 新 建立 檔案",
     "FuzzyFinder-DeleteFilePrefix": "刪除檔案",
